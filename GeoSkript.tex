@@ -1,0 +1,70 @@
+%Skript zur Vorlesung "EinfÃ¼hrung in die Geophysik 1", Wintersemester 2015/16.
+%Prof.Dr. Thomas Bohlen, Geophysikalisches Institut, FakultÃ¤t fÃ¼r Physik
+%Geschrieben von Julia A.M. Schmid, Sommersemester 2016 
+
+
+
+
+\documentclass[titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,dottedtoc,BCOR=5mm,paper=a4,fontsize=11pt,ngerman,american,]{report}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\usepackage{ngerman}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{subcaption}
+
+
+%Erlaubt \marginpar (Notizen am Rand) innerhalb des Mathemodus
+\usepackage{marginnote}
+
+%RÃ¶mische Zahlen
+\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1}}
+
+%Automatischer Abastz nach \itemize
+\let\EndItemize\enditemize 
+\def\enditemize{\EndItemize\vspace{0.3cm}}
+
+%Automatischer Abastz nach \enumerate
+\let\EndEnumerate\endenumerate
+\def\endenumerate{\EndEnumerate\vspace{0.3cm}}
+
+
+%verhindert Abstand bei \underbrace
+\newcommand{\ub}[2]{\underbrace{#1}_{\mathclap{#2}}}
+
+
+
+%Seitenstil: Kapitel oben auf Seite, Seitenzahlen Rand auÃen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}
+
+\begin{document}
+
+\input{Deckblatt}
+
+	\tableofcontents
+
+	\input{WasIstGeo}
+	\input{Seismik}
+	\input{Refraktionsseismik}
+	\input{Reflexionsseismik}
+	\input{Georadar}
+	\input{Geoelektrik}
+	\input{Gravimetrie}
+	\input{Magnetik}
+	
+
+\end{document}

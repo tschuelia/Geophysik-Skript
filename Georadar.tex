@@ -1,0 +1,130 @@
+\chapter{Georadar}
+
+Das Prinzip einer Messung mit Georadar ist Ã¤hnlich dem einer reflexionsseismischen Messung. 
+
+Eine Georadar-Antenne sendet gepulste elektromagnetische Wellen aus, die an GrenzflÃ¤chen reflektiert werden. Die reflektierten Wellen werden an der OberflÃ¤che von einer zweiten Antenne empfangen.\\ 
+Aus der Zeit zwischen Senden und Empfangen der Wellen, lÃ¤sst sich die Geschwindigkeit der Wellen berechnen, sofern die Entfernung zum Reflektor (z.B. eine Gesteinsgrenze) bekannt ist. Aus dieser Geschwindigkeit lÃ¤sst sich dann auf die elektromagnetischen Eigenschaften der Gesteine im Untergrund rÃ¼ckschlieÃen.\\ 
+In der Praxis ist es meist jedoch genau umgekehrt: die elektromagnetischen Eigenschaften des Untergrunds sind bekannt, daraus lassen sich dann wiederum die Geschwindigkeiten berechnen und daraus kann man die Entfernung des Reflektors ermitteln. 
+
+Das AuflÃ¶sungsvermÃ¶gen sowie die Eindringtiefe der elektromagnetischen Wellen ist abhÃ¤ngig vom Frequenzbereich. Dieser liegt zwischen 10 und 100\,\si{MHz}. GrundsÃ¤tzlich lÃ¤sst sich sagen: je hÃ¶her die Nominalfrequenz ist, desto feiner ist die AuflÃ¶sung und desto geringer ist die Eindringtiefe. \\
+Weiterhin ist die Eindringtiefe abhÃ¤ngig von der LeitfÃ¤higkeit der oberen Schichten. Liegt oben ein stark leitfÃ¤higes Material an, kann das Signal nicht in tiefere Schichten vordringen. 
+
+Die Auswertung der gemessenen Daten erfolgt nach den Methoden der Reflexionsseismik.
+
+Anwendung finden Georadarmessungen bei der Detektion von HÃ¶hlen und Spalten, bei der Ortung von Rohrleitungen, Kabeln, \dots und bei allgemeinen Untersuchungen zur Bodenstruktur.
+
+\section{Messaufbau}
+Der Messaufbau ist analog zum Messaufbau einer refraktionsseismischen Messung. Man unterscheidet auch hier wieder zwischen einer Messung mit Sender und EmpfÃ¤nger an einem Ort (\textbf{Monostatisch}) und einer Messung mit Distanz zwischen Sender und EmpfÃ¤nger (\textbf{Bistatisch}).
+
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.3]{GeoradarBilder/Monostatisch}
+	\caption*{monostatisch}	
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.3]{GeoradarBilder/Bistatisch}
+	\caption*{bistatisch}
+	\end{subfigure}
+\end{figure}
+
+
+Typisch fÃ¼r eine Messung ist ein bewegter monostatischer Messaufbau. Hierzu wird eine Sender-EmpfÃ¤nger-Kombination entlang einer Messlinie Ã¼ber die MessflÃ¤che gezogen. Durch die kontinuierliche Abstrahlung und Registrierung elektromagnetischer Wellen an Sender bzw. EmpfÃ¤nger kann man von einer steten Messung sprechen, d.h. das Messgebiet wird vollstÃ¤ndig abgebildet. Die Messdaten werden in ein Radargramm Ã¼bertragen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoradarBilder/bewegtMonostatisch}
+\end{figure}
+
+
+\section{Physikalische Parameter}
+Die LeitfÃ¤higkeit eines Gesteins lÃ¤sst sich durch zwei physikalische Konstanten beschreiben. Durch Kontrastunterschiede dieser beiden Materialeigenschaften $\epsilon$ und $\sigma$ im Untergrund entstehen Reflexionen und Diffraktionen (Beugungen) der elektromagnetischen Welle.
+
+\subsubsection{PermittivitÃ¤t $\epsilon$} 
+Legt man an ein Objekt ein elektrisches Feld an, beginnen sich die freien LadungstrÃ¤ger des Objektes an diesem Feld auszurichten. Dabei erzeugen sie ein sogenanntes Polarisationsfeld, welches dem Ã¤uÃeren elektrischen Feld entgegenwirkt und dieses abschwÃ¤cht. Wie stark das Polarisationsfeld wirkt wird mit Hilfe der Materialkonstante $\epsilon_r$ beschrieben. Die PermittivitÃ¤t berechnet sich dann so: \begin{equation*}
+	\epsilon = \epsilon_r \cdot \epsilon_0
+\end{equation*} Dabei ist $\epsilon_0$ die PermittivitÃ¤t des Vakuums.
+
+\subsubsection*{Elektrische LeitfÃ¤higkeit $\sigma$}
+Diese MaterialgrÃ¶Ãe gibt an, wie fÃ¤hig ein Stoff, ist Strom zu leiten.
+GrundsÃ¤tzlich gilt, dass stark wassergesÃ¤ttigte Gesteinsschichten oder tonhaltige Minerale stark leitfÃ¤hig sind. Aus diesem Grund ist eine Georadarmessung bei solchen Gesteinsschichten nicht mÃ¶glich.
+
+\section{Auswertung}
+Da die Auswertung der Daten aus einer Messung mit Georadar Ã¤hnlich der einer reflexionsseismischen Messung sind, mÃ¶chten wir an dieser Stelle nur auf ein paar Besonderheiten eingehen. 
+
+\subsection{Ausbreitungsgeschwindigkeit}
+Wir betrachten zunÃ¤chst den Normalfall: die Materialeigenschaften des Untergrundes sind bekannt und wir mÃ¶chten die Geschwindigkeit der elektromagnetischen Wellen berechnen. HierfÃ¼r benutzen wir die folgende Formel: \begin{equation*}
+	v = \frac{c}{\sqrt{\mu_r \cdot \epsilon_r}} \approx \frac{c}{\sqrt{\epsilon_r}}
+\end{equation*}
+Hierbei ist $\epsilon_r$ die relative PermittivitÃ¤t, die wir bereits kennengelernt haben. $c$ bezeichnet die Vakuumlichtgeschwindigkeit mit einem Wert von gerundet $3 \cdot 10^{8}\,\si{m/s}$. Die relative PermeabilitÃ¤t wird mit $\mu_r$ angegeben. Dieser Wert ist nur gering variabel und bewegt sich um den Wert 1. Der beeinflussende Faktor fÃ¼r die Wellengeschwindigkeit ist also relative PermittivitÃ¤t. $\epsilon_r$ variiert zwischen Werten von 1 bis 81.
+
+\subsection{AuflÃ¶sungsvermÃ¶gen}
+Interessant bei einer Messung mit Georadar ist das AuflÃ¶sungsvermÃ¶gen der verwendeten Antenne. Dazu muss zunÃ¤chst der Begriff der \textbf{Nominalfrequenz} geklÃ¤rt werden. Georadar-Antennen strahlen ihre Energie Ã¼ber eine Bandbreite ab und nicht nur Ã¼ber exakt eine Frequenz. Der Mittelwert dieser Bandbreite ist Nominalfrequenz $f_{\text{N}}$, bei welcher die Antenne also maximal viel Energie abgibt.
+
+MaÃgebend fÃ¼r das AuflÃ¶sungsvermÃ¶gen ist die rÃ¤umliche Ausdehnung des elektromagnetischen Pulses (\textbf{WellenlÃ¤nge}): \begin{equation*}
+	\lambda = \frac{1}{f_{\text{N}}} \cdot v = T \cdot v
+\end{equation*} Hierbei ist $v$ die Geschwindigkeit der Radarwelle und T die PulslÃ¤nge.
+
+Die theoretische vertikale AuflÃ¶sung $r$ berechnet sich nun als ein Viertel der WellenlÃ¤nge: \begin{equation*}
+	r = \frac{1}{4} \lambda
+\end{equation*}
+
+\subsection{Auswertung von Diffraktionen}
+Trifft die elektromagnetische Welle auf eine kleinrÃ¤umige DiskontinuitÃ¤t im Untergrund (zum Beispiel eine Rohrleitung, keine Grenzschicht) wird sie wie eine seismische Welle gebrochen und ein Teil wird reflektiert. Diese rÃ¼cklÃ¤ufige Welle wird an der OberflÃ¤che registriert. Unter der Annahme, dass die Geschwindigkeit $c$ im Medium konstant ist, lÃ¤sst sich die Tiefe der Diffraktion bestimmen, bzw. umgekehrt die Geschwindigkeit der Welle. Die Formel zur Berechnung wollen wir nun mit Hilfe einer Veranschaulichung des Messaufbaus herleiten.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoradarBilder/DiffraktionAufbau}
+\end{figure}
+
+
+Die Laufzeit $t$ berechnet sich so: \begin{equation*}
+	t = \frac{2 \cdot s}{v}
+\end{equation*}
+
+Diese Gleichung lÃ¤sst sich unter Kenntnis der Standorte von Sender und EmpfÃ¤nger umformulieren: \begin{equation*}
+	t = \frac{2}{v} \cdot \sqrt{\Delta x^2 + z_0^2} = \frac{2}{v} \cdot \sqrt{(x-x_0)^2 + z_0^2}
+\end{equation*}
+
+Misst man nun auch noch die Laufzeit $t_0$ der Welle, die im 90$^\circ$-Winkel zur OberflÃ¤che vom EmpfÃ¤nger abstrahlt, lÃ¤sst sich $z_0$ berechnen: \begin{equation*}
+	t_0 = \frac{2 \cdot z_0}{v} \quad \Rightarrow \quad z_0 = \frac{t_0 \cdot v}{2}
+\end{equation*}
+
+Daraus ergibt sich nun die Laufzeitgleichung: \begin{equation*}
+	t^2 = \frac{4}{v^2} \cdot (\Delta x^2 + z_0^2) = \frac{4}{v^2} \cdot \Delta x^2 + t_0^2
+\end{equation*}
+
+Die Gleichung fÃ¼r $t$ ergibt beim Auftragen eine Hyperbel, welche Diffraktionshyperbel genannt wird. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoradarBilder/Radargramm}
+\end{figure}
+
+Aus Kenntnis der Geschwindigkeit lassen sich RÃ¼ckschlÃ¼sse Ã¼ber die Materie des Untergrunds ziehen.
+
+
+\subsection{Reflexionskoeffizient}
+Eine weitere MÃ¶glichkeit zur Analyse bietet die ReflexionsstÃ¤rke. Hierbei legt man zu Grunde, dass sich die PermittivitÃ¤t $\epsilon$ an der Grenzschicht signifikant Ã¤ndert. Der Reflexionskoeffizient lÃ¤sst sich annÃ¤hern durch: \begin{equation*}
+	R = \frac{\sqrt{\epsilon_2 - \epsilon_1}}{\sqrt{\epsilon_2 + \epsilon_1}}
+\end{equation*}
+
+Dies ist die gÃ¤ngige Methode bei Messungen im Feld.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

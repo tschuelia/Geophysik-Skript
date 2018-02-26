@@ -1,0 +1,168 @@
+\chapter{Geoelektrik}
+Geoelektrische Verfahren dienen zur Erforschung der Erdkruste durch Messung elektrischer Spannung und StromstÃ¤rke an der ErdoberflÃ¤che. Hierbei wird zwischen kÃ¼nstlichen und natÃ¼rlichen Messmethoden unterschieden.
+
+Anwendung findet die Geoelektrik hauptsÃ¤chlich bei ingenieurgeophysikalischen Fragestellungen, wie beispielsweise die Erkundung mÃ¶glicher Lecks in Rohrleitungen, Deponieuntersuchungen oder Untersuchungen des Grundwasservorkommens. Geoelektrische Messungen werden auch verwendet bei globalen Forschungsfragen wie die Untersuchung von Gletschern oder PermafrostbÃ¶den.
+
+\section{Messmethoden}
+\subsection{KÃ¼nstliche Quellen}
+\subsubsection{Gleichstromverfahren}
+Durch eine externe Spannungsquelle wird ein kÃ¼nstliches Gleichstromfeld an die Erde angelegt. Sind der Wert der Spannung $U$ und StromstÃ¤rke $I$ bekannt, kann der spezifische Widerstand gemessen werden. Dieser Widerstand ist eine Gesteinseigenschaft. Ist der Untergrund nicht homogen, wird der scheinbare spezifische Widerstand gemessen, welcher vom spezifischen Widerstand verschieden ist.
+
+\subsubsection{Wechselstromverfahren}
+Ein kÃ¼nstlich angelegtes elektromagnetisches Wechselfeld induziert StrÃ¶me in der Erde. Durch Messung des dadurch induzierten elektromagnetischen Feldes an der ErdoberflÃ¤che lassen sich RÃ¼ckschlÃ¼sse auf die Gesteinseigenschaften des Untergrundes ziehen.
+
+\subsection{NatÃ¼rliche Quellen}
+\subsubsection{Eigenpotentialverfahren}
+Bei dieser Methode werden die oberflÃ¤chennahen Gleichstromfelder gemessen. Solche Felder entstehen beispielsweise durch Kontaktspannungen im Bereich von ErzlagerstÃ¤tten.
+
+\subsubsection{Magnetotellurik}
+Durch SonnenaktivitÃ¤t, Blitze oder Ãhnliches schwankt das elektromagnetische Feld der Erde. Dadurch wird auch das lokale elektromagnetische Feld verÃ¤ndert. Diese VerÃ¤nderung wird bei der Magnetotellurik vermessen.
+
+\section{Messkonfigurationen}
+Die am hÃ¤ufigsten verwendete Messmethode ist das kÃ¼nstliche Gleichstromverfahren, weshalb wir im Folgenden auf diese nÃ¤her eingehen.
+
+Messungen mit kÃ¼nstlicher Stromzufuhr verwenden eine Vierpunktanordnungen. Diese umfasst zwei Elektroden A und B, Ã¼ber welche der Strom zugefÃ¼hrt wird, und zwei Messsonden M und N zur Potentialmessung. Diese Elektroden und Sonden werden meist in einer Linie angeordnet. Der Abstand zueinander ist hierbei vom gewÃ¼nschten Untersuchungsergebnis abhÃ¤ngig.
+
+\subsection{beliebige Vierpunktanordnung}
+Diese Anordnung unterliegt keiner Regel. Auch sind die Elektroden nicht zwingend in Linie angeordnet. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.8]{GeoelektrikBilder/beliebigeVierpunktanordnung}
+\end{figure}
+
+
+
+\subsection{Sondierung}
+Ist eine Untersuchung der Struktur unter einem bestimmten Punkt vorgesehen, eignet sich die \textbf{Schlumberger-Anordnung}.
+Bei dieser Messkonfiguration ist der Abstand zwischen den Elektroden A und B deutlich grÃ¶Ãer als der Abstand zwischen den Sonden M und N. Im Laufe der Messung wird der Abstand von A und B symmetrisch zu N und M immer weiter vergrÃ¶Ãert, wÃ¤hrend N und M am selben Ort bleiben. Durch diese Art der Messung ergeben sich Informationen Ã¼ber den spezifischen Widerstand in immer grÃ¶Ãeren Tiefen.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoelektrikBilder/SchlumbergerAnordnung}
+\end{figure}
+
+
+\subsection{Kartierung}
+Von einer Kartierung spricht man dann, wenn die Struktur in einer bestimmten Tiefe flÃ¤chenhaft untersucht werden soll. HierfÃ¼r findet die \textbf{Wenner-Anordnung} Verwendung. Im Vergleich zur Schlumberger-Anordnung ist hier der Abstand aller Elektroden und Sonden gleich. Im Laufe der Messung wird die gesamte Messauslage mit festem Abstand entlang des zu untersuchenden Profils bewegt. Der Elektrodenabstand entspricht etwa der Eindringtiefe.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoelektrikBilder/WennerAnordnung}
+\end{figure}
+
+
+
+\subsection{Dipol-Dipol-Anordnung}
+Diese Anordnung trennt Spannungsmessung und Stromzufuhr. Die Elektroden A und B zur Stromeinspeisung haben dabei den selben Abstand $a$ wie die Sonden N und M zur Spannungsmessung. Der Abstand dieser beiden Paare ist ein Vielfaches von $a$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoelektrikBilder/DipolDipolAnordnung}
+\end{figure}
+
+
+\section{Auswertung}
+Um RÃ¼ckschlÃ¼sse auf die Beschaffenheit des Untergrundes ziehen zu kÃ¶nnen, muss der scheinbare spezifische Widerstand $\rho_{\text{s}}$ berechnet werden. 
+Bei Gleichstromverfahren ist das relativ einfach. Der scheinbare spezifische Widerstand berechnet sich zu \begin{equation*}
+	\rho_{\text{s}} = R \cdot K = \frac{U}{I} \cdot K
+\end{equation*}
+
+$K$ bezeichnet hierbei den Geometriefaktor der verwendeten Anordnung.
+
+VerÃ¤ndert sich der scheinbare spezifische Widerstand im Laufe einer Messung kaum oder nicht, spricht man vom Medium des Untergrundes als homogenen Halbraum. 
+
+FÃ¼r die Auswertung des spezifischen Widerstandes gibt es gewissen Anhaltspunkte. In Mineralen ist der spezifische Widerstand groÃ und in Metallen, Erzen oder Graphit klein. \\
+Eine DiskontinuitÃ¤t im Untergrund kenntzeichnet sich durch eine deutliche VerÃ¤nderung des spezifischen Widerstandes. Solche signifikanten Ãnderungen werden beispielsweise durch Wasser, Salze oder Metalle und Erze hervorgerufen. Um ein GefÃ¼hl fÃ¼r die GrÃ¶Ãenunterschiede zu bekommen, seien nun noch ein paar Literaturwerte genannt. 
+
+\begin{tabular}{ll}
+	\textbf{Gestein} & \textbf{spezifischer Widerstand [$\Omega$m]} \\
+	Sand (trocken) & $10^5$ \\
+	Sand (wassergesÃ¤ttigt) & 1000 -- $10^4$ \\
+	Granit & 300 - $3 \cdot 10^4$ \\
+	Kalkstein & 100 -- 7000 \\
+	Lehme & 3 -- 300 \\
+	Ton (trocken) & 30 -- 1000 \\
+	Ton (nass) & 1-30
+\end{tabular}  
+
+\subsection{Geometriefaktor}
+Dieser Faktor ist wichtig, da sich der scheinbare spezifische Widerstand je nach verwendeter Anordnung Ã¤ndert. Ohne Herleitung seien hier die Geometriefaktoren der vier prÃ¤sentierten Messkonfigurationen genannt:
+
+\subsubsection{beliebige Vierpunktanordnung}
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.5]{GeoelektrikBilder/beliebigeVierpunktanordnung}
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+		\begin{equation*}
+			K = \frac{2 \pi}{\left( \frac{1}{r_1} - \frac{1}{r_2} \right) - \left( \frac{1}{r_3} - \frac{1}{r_4} \right)}
+		\end{equation*}
+	\end{subfigure}
+\end{figure}
+
+
+\subsubsection{Schlumberger-Anordnung}
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.4]{GeoelektrikBilder/SchlumbergerAnordnung}
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+		\begin{equation*}
+			K = \frac{\pi}{a} \cdot \left( \frac{L}{2} \right)^2
+		\end{equation*}
+	\end{subfigure}
+\end{figure}
+
+
+\subsubsection{Wenner-Anordnung}
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.4]{GeoelektrikBilder/WennerAnordnung}
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+		\begin{equation*}
+				K = 2 \pi \cdot a
+		\end{equation*}
+	\end{subfigure}
+\end{figure}
+
+
+
+\subsubsection{Dipol-Dipol-Anordnung}
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.35]{GeoelektrikBilder/DipolDipolAnordnung}
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+		\begin{equation*}
+				K = \pi \cdot a \cdot n \cdot (n+1) \cdot (n+2)
+		\end{equation*}
+	\end{subfigure}
+\end{figure}
+
+
+\subsection{Stromfluss im Halbraum}
+Bei einer Messung mit Vierpunktanordnung wird Strom in die Erde eingespeist. Dadurch entsteht ein elektrisches Feld, welches sich durch Feldlinien charakterisieren lÃ¤sst. Diese Feldlinien sind senkrecht zur Stromrichtung und bilden ÃquipotentialflÃ¤chen, also FlÃ¤chen, an denen das gleiche Potential anliegt.   
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{GeoelektrikBilder/EFeldErde}	
+	\caption*{\textsl{Quelle: umwelt.sachsen.de}}
+\end{figure}
+
+ 
+
+
+
+

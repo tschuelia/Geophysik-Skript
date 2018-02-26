@@ -1,0 +1,211 @@
+\chapter{Magnetik}
+
+\section{Das Erdmagnetfeld}
+\subsection{Aufbau}
+
+Das Erdmagnetfeld lÃ¤sst sich in drei Bereiche unterteilen. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{MagnetikBilder/Erdmagnetfeld}
+\end{figure}
+
+\subsubsection{Das AuÃenfeld: MagnetosphÃ¤re}
+Auf diese Ã¤uÃere magnetische HÃ¼lle treffen elektrisch geladene Teilchen des Sonnenwindes mit einer relativen Geschwindigkeit von 400\,m/s. Durch diese hohe Geschwindigkeit bildet sich eine Schock-Welle, die \textbf{Magnetopause}, auf der sonnennahen Erdseite.
+Die auftreffenden Teilchen des Sonnenwindes verursachen Magnetfelder. Das Erdmagnetfeld wird aufgrund der Sonnenwinde auf der Tagseite verstÃ¤rkt und auf der Nachtseite abgeschwÃ¤cht.
+
+Die Feldlinien der MagnetosphÃ¤re bilden eine trÃ¤nenartige Form, die sich bis zu 50\,000\,km (etwa 8 Erdradien) erstreckt.
+
+\subsubsection{Van-Allen-GÃ¼rtel: 2000 -- 20\,000 km}
+Die Ionen des Sonnenwindes und der IonosphÃ¤re werden im Magnetfeld gefangen. Entlang magnetischer Linien wandern diese schraubenartig von Pol zu Pol. Dabei bilden sich GÃ¼rtel mit intensiver Strahlung, der Van-Allen-GÃ¼rtel.\begin{itemize}
+	\item innerer GÃ¼rtel: 2000 -- 5000 km HÃ¶he
+	\item Ã¤uÃerer GÃ¼rtel: 13\,000 -- 20\,000 km HÃ¶he
+\end{itemize} 
+Die magnetischen Effekte auf der ErdoberflÃ¤che sind aufgrund der groÃen Entfernung jedoch gering. Sichtbar werden die GÃ¼rtel aber dennoch, wenn es zu einer Ãberladung der GÃ¼rtel kommt. Dann streifen die Partikel die obere AtmosphÃ¤re und regen diese zu Floureszenz an, was dann als Polarlichter sichtbar wird.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{MagnetikBilder/VanAllenGuertel}
+\end{figure}
+
+
+\subsubsection{IonosphÃ¤re: 80 -- 500 km}
+Die UV-Strahlung der Sonne ionisiert MolekÃ¼le der oberen AtmosphÃ¤re. Diese setzten Elektronen frei, welche sich der Feldlinien entlang bewegen. Durch diese Bewegung bilden sich Stromkreise, die wiederum Magnetfelder erzeugen.
+Dieses Feld ist schlieÃlich das "`spÃ¼rbare AuÃenfeld"' an der ErdoberflÃ¤che.
+
+\subsection{Variationen des Erdmagnetfeldes}
+Das Erdmagnetfeld untersteht einem stÃ¤ndigen, zeitlich abhÃ¤ngigen Wandel durch UmwelteinflÃ¼sse.
+
+\subsubsection{TÃ¤gliche Variationen}
+Die Magnetfelder der IonosphÃ¤re schwanken aufgrund der Erddrehung im Laufe eines Tages.
+Sonnenflecken und Sonnenwinde (magnetische StÃ¼rme) lÃ¶sen eine starke Strahlung aus, welche das Erdmagnetfeld verstÃ¤rken. Diese haben IntensitÃ¤ten bis zu 1000 nT. Diese tÃ¤gliche Variation des Erdmagnetfeldes ist breitenabhÃ¤ngig, wobei sie an den Polen stÃ¤rker ist.
+
+\subsubsection{LÃ¤ngerfristige Variationen}
+Das Erdmagnetfeld variiert nicht nur im Laufe eines Tages, sondern hat auch deutlich langwierigere VerÃ¤nderungen. Zum Beispiel kehrt sich das Magnetfeld mit Perioden von $10^{12}$ Sekunden (knapp 2 Milliarden Jahre) um. Auch die \textbf{SÃ¤kularvariationen} (Variationen der PolstÃ¤rken) haben eine sehr lange Periode von $10^9$ -- $10^{10}$ Sekunden.
+
+\subsection{Beschreibung des Magnetfeldes}
+\subsubsection{NÃ¤herung: Dipolfeld}
+In erster NÃ¤herung entspricht das Erdmagnetfeld einem Dipolfeld. Die Achse des Feldes ist gegenÃ¼ber der Rotationsachse der Erde um 11,4 -- 11,5$^{\circ}$ geneigt. 
+Die DipolintenistÃ¤t ist allerdings nicht konstant, sie ist an den Polen stÃ¤rker: \begin{description}
+	\item Ãquator: $\approx$ 30 000 nT
+	\item Nordpol: $\approx$ 60 000 nT
+	\item Karlsruhe: $\approx$ 47 000 nT
+\end{description}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{MagnetikBilder/Dipolfeld}
+\end{figure}
+
+
+\subsubsection{Nichtdipolfeld}
+Zwar lÃ¤sst sich das Erdmagnetfeld als Dipolfeld nÃ¤hern, aber es gibt dennoch starke Abweichungen davon. Das Nichtdipolfeld ist ein System aus wirbelfÃ¶rmigen Anomalien. Um jeden Breitenkreis treten etwa 1 -- 2 positive und 1 -- 2 negative solcher Anomalien auf. Der Grund warum wir auf diese Anomalien Ã¼berhaupt eingehen, ist ihre StÃ¤rke. Solche Anomalien kÃ¶nnen bis zu 20 000 nT betragen. Das Nichtdipolfeld Ã¤ndert sich zum Teil mit der Zeit, allerdings gibt es auch einen stationÃ¤ren Anteil. Diese Ãnderungen sind die SÃ¤kularvariationen.
+
+
+
+\subsection{Mathematische Beschreibung}
+Wir wollen uns in diesem Abschnitt das Erdmagnetfeld auf etwas mathematischere oder physikalischere Weise anschauen.
+
+Dazu betrachten wir zunÃ¤chst einige physikalischen Grundlagen zum Thema Magnetfeld. 
+
+Wir beginnen mit der Berechnung des Feldes eines Dipols, mit Hilfe folgender Grafik:
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.6]{MagnetikBilder/PotentialDipol}
+\end{figure}
+
+
+ 
+Weiterhin werden wir ohne Herleitung die Formel zur Berechnung des Dipolpotentials verwenden: \begin{equation*}
+	W = \frac{\mu_0}{4 \cdot \pi} \cdot \frac{m \cdot cos(\theta)}{r^2} \quad \text{mit } \mu_0 = 4 \cdot \pi \cdot 10^{-7}\,\si{\frac{N}{A^2}}
+\end{equation*}
+$\mu_0$ heiÃt magnetische Feldkonstante und $m$ ist das magnetische Moment. Letzteres gibt die StÃ¤rke des Dipolfeldes an.
+
+Das Dipolfeld lÃ¤sst sich nun in eine radiale Komponente $B_r$ und eine transversale Komponente $B_{\theta}$. Diese berechnen sich folgendermaÃen: \begin{align*}
+	B = (B_r, B_{\theta}) = \begin{cases}
+		B_r = - \dfrac{dW}{dr} = \dfrac{\mu_0}{4 \cdot \pi} \cdot \dfrac{2 \cdot m \cdot cos(\theta)}{r^3} \\
+		B_{\theta} = - \dfrac{1}{r} \dfrac{dW}{d \theta} = \dfrac{\mu_0}{4 \cdot \pi} \cdot \dfrac{m \cdot sin(\theta)}{r^3}
+	\end{cases}
+\end{align*}
+
+
+Mit der Information zur Berechnung der Feldkomponenten lassen sich nun zwei Feldelemente beschreiben, welche die Richtung des magnetischen Feldes bezÃ¼glich des lokalen Koordinatensystems angeben.
+
+\subsubsection{Inklination}
+Die Inklination gibt an, in welchem Winkel die magnetischen Feldlinien auf die ErdoberflÃ¤che treffen. Der Winkel ist im Bezug zum Horizont. Eine positive Inklination bedeutet, dass die Feldlinien "`nach unten"' geneigt sind. Dies ist (aktuell) in der nÃ¶rdlichen HemisphÃ¤re der Fall. Eine negative Inklination bezeichnet man auch als "`sÃ¼dlich"'. Die Inklination am Ãquator ist nahezu 0$^{\circ}$ und in Karlsruhe etwa 63$^{\circ}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.4]{MagnetikBilder/Inklination}
+\end{figure}
+
+
+\subsubsection{Magnetisch Nord und geomagnetisch Nord}
+Obwohl die Begriffe sehr Ã¤hnlich sind, unterscheiden sie sich doch deutlich in ihren Bedeutungen. Die magnetischen Pole sind sind die Orte, an denen die Feldlinien senkrecht auf die Erde treffen, die Inklination also 90$^\circ$ betrÃ¤gt. Die geomagnetischen Pole hingegen geben an, an welcher Stelle die gedachte Dipolachse die ErdoberflÃ¤che schneidet. Aufgrund der SÃ¤kularvariationen sind beide nicht ortsgebunden, was allgemein unter Polwanderung bekannt ist. Die Konvention ist, den magnetischen Pol der Nordhalbkugel als Nordpol, und den magnetischen Pol der SÃ¼dhalbkugel als SÃ¼dpol zu bezeichnen. 
+
+
+\begin{figure}[H]
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.7]{MagnetikBilder/PowanderungNordpol}	
+	\end{subfigure}
+	\begin{subfigure}[m]{0.5\textwidth}
+	\centering
+		\includegraphics[scale = 0.7]{MagnetikBilder/PolwanderungSuedpol}
+	\end{subfigure}
+	
+	\caption*{Links die Polwanderung auf der Nordalbkugel und rechts auf der SÃ¼dhalbkugel. Die schwarzen Punkte zeigen die Wanderung des magnetischen Pols an, die roten die Wanderung des geomagnetischen Pols. \textsl{Quelle: Deutsches GeoForschungsZentrum GFZ}}
+\end{figure}
+
+
+\subsubsection{Deklination}
+Ein Kompass funktioniert mit Hilfe des Magnetfeldes. Deshalb zeigt auch die Kompassnadel nach dem magnetischen SÃ¼dpol (aufgrund der Konvention bezeichnen wir diesen Punkt dennoch als "`magnetisch Nord"'). Wo genau dieser Punkt "`magnetisch Nord"' liegt Ã¤ndert sich mit der Zeit. Wichtig dabei ist, dass sich der geographische Nordpol nicht verÃ¤ndert, da er durch die Rotationsachse der Erde bestimmt ist. Die Deklination ist nun der Winkel zwischen geomagnetisch und geographisch Nord. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.4]{MagnetikBilder/Deklination}
+\end{figure}
+
+
+\section{Geomagnetische Messungen}
+\subsection{Geomagnetische Feldelemente}
+Zu Beginn wollen wir uns einmal die MessgrÃ¶Ãen einer geomagnetischen Messung anschauen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.4]{MagnetikBilder/geomagnetischeFeldelemente}
+\end{figure}
+
+
+Das Erdmagnetfeld lÃ¤sst sich durch zwei Koordinatensysteme darstellen. $x,y, z$ sind die "`offensichtlichen"' kartesischen Koordinaten, welche geographisch Nord, geographisch Ost und die Tiefe angeben. Hierzu fÃ¼gen wir nun noch die Kugelkoordinaten, bestehend aus den Winkeln der Deklination und Inklination, sowie des Betrags des Erdmagnetfeldvektors $F$ (\textbf{TotalintensitÃ¤t}). Diese drei GrÃ¶Ãen lassen sich direkt aus $x,y, z$ berechnen. \begin{equation*}
+	tan (D) = \frac{y}{x} \quad \quad tan (I) = \frac{z}{\sqrt{x^2 + y^2}} \quad \quad F = \sqrt{x^2 + y^2 + z^2}
+\end{equation*}
+
+Im Feld bei einer Messung werden normalerweise die Vertikalkomponente und die TotalintensitÃ¤t, selten auch die Horizontalkomponente gemessen.
+
+
+\subsection{Auswertung}
+Um auf die Auswertung eingehen zu kÃ¶nnen, mÃ¼ssen zunÃ¤chst ein paar Begriffe erklÃ¤rt werden. 
+
+\subsubsection{Magnetisierung}
+Jedes Atom eines Minerals besitzt ein magnetisches Moment mit Betrag und Richtung (Vektor). Das heiÃt, dass es sich in einem Magnetfeld ausrichtet wie eine Kompassnadel. Die Magnetisierung ist nun die vektorielle Summe aller magnetischen Momente.
+
+\subsubsection{Curie-Temperatur}
+Oberhalb der Curie-Temperatur richten sich die magnetischen Momente entlang eines Magnetfeldes aus. KÃ¼hlt ein Gestein auf eine Temperatur unterhalb der Curie-Temperatur ab, wird die aktuelle Magnetisierung "`eingefroren"'. Im Folgenden seien noch ein paar Werte der Curie-Temperatur genannt:
+
+\begin{tabular}{ll}
+  \textbf{Element} & \textbf{Curie-Temperatur $\vartheta_\text{C}$}\\
+  Cobalt & 1121\,$^{\circ}$C\\
+  Eisen & 768\,$^{\circ}$C\\
+  Nickel & 	360\,$^{\circ}$C\\
+  Gadolinium & 19,3\,$^{\circ}$C
+\end{tabular} 
+
+\subsubsection{SuszeptibilitaÌt}
+Die SuszeptibilitaÌt gibt an, wie stark sich ein Material "`magnetisieren"' lÃ¤sst. Sie ist abhÃ¤ngig vom Anteil an Magnetit im Gestein.
+
+\subsubsection{Induzierte Magnetisierung}
+Ein Magnetfeld verursacht die Einregelung, also die Ausrichtung der magnetischen Momente. Man spricht dann von induzierter Magnetisierung. Wie stark sich die magnetischen Momente eines Gesteins ausrichten, ist abhÃ¤ngig von der SuszeptibilitaÌt.
+
+\subsubsection{Remanente Magnetisierung}
+Ist ein Gestein auf eine Temperatur unterhalb der Curie-Temperatur abgekÃ¼hlt, richten sich die magnetischen Momente nicht mehr am aktuellen Magnetfeld aus. Ihre Magnetisierung ist also bis zum nÃ¤chsten Erhitzen auf die Curie-Temperatur konstant.
+
+\subsubsection{KÃ¶nigsberger VerhÃ¤ltnis}
+Das KÃ¶nigsberger VerhÃ¤ltnis gibt das VerhÃ¤ltnis von induzierter und remanenter Magnetisierung an. \begin{equation*}
+	Q = \frac{\text{M}_{\text{rem}}}{\text{M}_{\text{i}}} = \frac{\text{remanente Magnetisierung}}{\text{induzierte Magnetisierung}}
+\end{equation*}
+
+Die GrÃ¶Ãe dieser Zahl $Q$ gibt folglich Aufschluss Ã¼ber die Anteile an remanenter und induzierter Magnetisierung. 
+
+\begin{tabular}{ll}
+	$Q \gg 1$ & remanenter Anteil grÃ¶Ãer als induzierter Anteil  \\
+	$Q \ll 1$ & induzierter Anteil grÃ¶Ãer als remanenter Anteil
+\end{tabular}
+
+Diese Zahl spielt vor allem in der Forschung der historischen Geologie eine groÃe Rolle. Der PalÃ¤omagnetismus, also die Erhaltung verschiedener Charakteristika des Erdmagnetfeldes im Gestein Ã¼ber die Zeit, gibt Aufschluss Ã¼ber das Alter verschiedener Gesteine und den zeitlichen Verlauf des Erdmagnetfeldes. 
+	Aufgrund der sich variierenden Position in Folge des
+	Kontinentaldrifts und der mehrfachen Umpolung des
+	Erdmagnetfeldes kÃ¶nnen die in den Gesteinen
+	"`gespeicherten"' magnetischen Orientierungen Aufschluss
+	Ã¼ber Zeit und Ort der Gesteinsbildung oder der
+	Gesteinsablagerung geben.
+	
+Besonders schÃ¶n lÃ¤sst sich das an den Mittelozeanischen RÃ¼cken beobachten. Hier tritt aufgrund zweier tektonischer Platten, die sich voneinander weg bewegen, kontinuierlich neues Material aus der Tiefe aus und kÃ¼hlt langsam ab. Bei einer geomagnetischen Messung sind in Folge deutliche Muster verschiedener Magnetisierungen zu erkennen. 
+
+\begin{figure}[H]
+	\includegraphics[width = \textwidth]{MagnetikBilder/PalaÌomagnetismusMOZ}
+    \caption*{PalÃ¤omagnetismus an einem Mittelozeanischen RÃ¼cken.  \textit{Quelle: Wikipedia}}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
